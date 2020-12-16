@@ -3,8 +3,8 @@ node_js:
   - 10.15.1
 install:
   - npm install
-# script:
-#   - npm run test
+script:
+  - npm run test
 branches:
   only:
     - master
@@ -12,7 +12,7 @@ branches:
 deploy:
   provider: heroku
   api_key:
-    secure: bHuTrBSTyLr+kx9y/ygXBo24INz5/90LpJL+cCUJPXMyCxZr6Uh/N+x39Q7YXhnPVFd7exmkM6NKg/fSSqHligOlY/QOusC1wh3Nb8YNG6rLTzd0TIrz86MsUrHJkqPo/OjxDDoE4OYGTsO2sWtLuluidgSKOLfJSFMxYPnz3/TC55PwpkXGAKAeU2W+rbvnm3JAFXyjE6U275M59vv1bcHC2yfWjWpVR9zgQfcEMFI3ig+Qd0wdZUWQMAXvkdvPCadu8LbldSuU6RZlocMxeed5cIId54d4GzFJJWShtYxbv0X01YyFYExzKD44ZqJ31xzq5lIQT2Tv70pNVG+fGsu0oGroqqzSe+g5kzDQaRbydGmJwYs2vYDwaUsZE31eFvpCTvu0CVcHrWUqNeKP5oV+hzp3/c/lYPLBTcRRzDWs81xEajtAwkSMm+XClBwRawVv0SE8V+QL+ZsVArQwWsvr5JGatrX1ya1nLUsqbzEkmINbgg8gCKfocrCMfR9/nl1M+MuqsG7yo/+gDG3vyD9eucY3J+HXY+Nqcb7whaHYRl2xVhT4TJ6L3LhCFYe0cYJ1n0bYN+bFL6RR1JNmAeMkG5SDPuZoC34fyctOKdRdYIx2l3HmJZrxFqnUIF0p9WtFt9WvJkPInhv0w9OViQXHbDI5rusJb97WcZgxCgM=
+    secure: Gg0D4d1QsExClFW8Oj64wpE8XOeMWtPXHEUjkn7dskyhZuUva3CP3a8Gfsl1r23dODrj/kgMOtIyD4888ywdXcHC72qFnGSvQqIDXSN50WtFkzyBTDfbnjVlWJzn75Ao60wIpHYcUU7zmXTts25MNxpBo9OMhjZAtLXrY+24R85qRzTkWjBxI0F0M3V/f38qt2pKzdicM2M5gkRrY5JB2wul6HfFoAU2k7umQd/GLpuqaRQis4L56EbiAQZxwVLdHdpReaqVTWJh+OuZpKgJ0GC0RulbpiKCwP2I1HCH6Lb3Jo5L6AtDUAijkYnfxPJn279OWlkFwKNrKW1U5BlnD9gOImDMGNgKqawA32UFUtmnkT2T9OyEXqWs9s5RLUsFn7ZCjU+E5vvE3/vokWG04u1f+fi/jhHAyocGxMDeIj44WR36aRMhvUNzii1qlLPs2Grt/4mcni1CIqzWL2iyoP3VJFFHIs7GvQRWaOWibcpalQBP6CBjAZV5WPXD/L1Gs1V4htJUEYt45DqmM0P8yIMEa4Fjc2qLAFF0b97VL9qA4ys7trqc7nZLBHFqmwEmFlhMhp75pNobvGikSlifHxQ1tWn/3qIDPGo4zpH+mEm053aEsBj8z0kUmCNpNaLp7DNaemrQshwx57xZ1sNB2lCUE2z8E0PeSNNHk++fZ8w=
 
   app:
     master: travis-example-production
