@@ -9,7 +9,7 @@ app.listen(port, () => {
 
 app.get('/', (req, res) => {
   return res.json({
-    message: 'Port is running'
+    message: `Port is ${port}`
   });
 });
 
