@@ -1,10 +1,18 @@
 language: node_js
 node_js:
-  - 10.15.1
+- 10.15.1
 install:
-  - npm install
+- npm install
 script:
-  - npm run test
+- npm run test
 branches:
   only:
-    - master
+  - master
+  - dev
+deploy:
+  provider: heroku
+  api_key:
+    secure: SDeJuOBT3hBWF/z0E+u0+uYDOnvgMPVGrHqEFM3UxyjiXiBG5nagA/4bmeoQdgx5DgN04pHRU1qyveSMjNKC13on0U6u1ijVOfoUY67UFbe8y+ckVAz+E50BaWV1jkSsY84UDsX6KkZoqouFuJmNshryqGG2T/q7IWiIGX41pSHEDnmI5ikqqrpLL0sEtHy2JXHo1O/M8hH1i9MnHJHJbWPxlb/Hn7yOsJQjEM2AbOz/xqkZUqiYLJ0FxDB525nxPSptpKlnS9u+/GGb2zZusW5bW6A8bBdKzMizP7uGH+BS0ioLqa/NVgpk35qVqTfPVen0vAvJyWk0uVXZkBQuN+wNABpNjNem08Ryw/vZb5MGyWof82axikXyGR1o03V+jXM8K3MBgvUa5ACfRYXzFzJ32t/kBuu7UTIifZFEXgmQGly/6klRfLiWv0CkcLkBavgqjTe6/odBPKzrpczYXFEUgTpJbXCAq1LusP8BJM1oTSF7aH3HdMN0G/VmC28ZmG+nQNOSpe5P7LNXEqEdAULIA6i9SR/UqsXGcz9kQsiz79ranaS8D3gHBJmrCDNafO6nexhW8LJWXbNBnfUS8V81GUDqZntrIqj32aNjDVzFxPdHMgiidBuVAq9uYcE5AceRoppzSSWj+jpS6CmO3flGK7UQoBCHDtFk9UXJWyk=
+  app:
+    master: travis-example-production
+    dev: travis-example-stage
