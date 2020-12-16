@@ -3,6 +3,7 @@ node_js:
   - 10.15.1
 install:
   - npm install
+before_script: chmod 0777 ./node_modules/.bin/mocha
 script:
   - npm run test
 branches:
