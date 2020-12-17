@@ -1,3 +1,5 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable no-console */
 const express = require('express');
 
 const app = express();
@@ -11,5 +13,4 @@ app.listen(port, () => {
 app.get('/', (req, res) => res.json({
   message: `Host is runnin on ${port}`
 }));
-
 module.exports = app;
