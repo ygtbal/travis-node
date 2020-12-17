@@ -9,7 +9,7 @@ app.listen(port, () => {
 });
 
 app.get('/', (req, res) => res.json({
-  message: `Port is ${port}`
+  message: `Host is runnin on ${port}`
 }));
 
 module.exports = app;
