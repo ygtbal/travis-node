@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable no-console */
-const express = require('express');
+import express from 'express';
 
 const app = express();
 
