@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "export NODE_ENV=test&&npx sequelize db:migrate:undo:all&&npx sequelize db:migrate&&npx sequelize-cli db:seed:undo:all&&npx sequelize-cli db:seed --seed 20201217123904-demo-books&&mocha --require @babel/register .build/api/test.js --timeout 10000 --exit",
+    "test": "export NODE_ENV=test&&npx sequelize db:migrate:undo:all&&npx sequelize db:migrate&&npx sequelize-cli db:seed:undo:all&&npx sequelize-cli db:seed --seed 20201217123904-demo-books&&mocha --require @babel/register .build/test.js --timeout 10000 --exit",
     "dev": "nodemon --exec babel-node ./api/app.js",
     "start": "nodemon --exec babel-node ./api/app.js",
     "build": "rm -rf ./build && babel -d ./build ./api -s",
